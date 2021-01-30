@@ -3,8 +3,7 @@
  	return false;
  }*/
 
-
-var formerMaca = document.getElementById('formerMaca'),
+ let formerMaca = document.getElementById('formerMaca'),
 	laterMaca = document.getElementById('laterMaca'),
 	nativeGuy = document.getElementsByClassName('natives'),
 	fish = document.getElementById('fish'),
@@ -27,9 +26,9 @@ var formerMaca = document.getElementById('formerMaca'),
 
 window.scrollTo(scroll,0);
 
- 	
+
  // 	two.onclick = function(event){
- 		
+
 	// 	cruise.style.left=1455 + "px";
 
 	// 	smallCruise.style.left=52.2 + "px";
@@ -41,8 +40,8 @@ window.scrollTo(scroll,0);
 //move the cruise all(start,stop,rotate)
 
 function moving(e){
-	//right Arrow and end point 
- 	if(e.keyCode == 39 && cruiseLeft < 6630){		
+	//right Arrow and end point
+ 	if(e.keyCode == 39 && cruiseLeft < 6630){
  		var formerMaca = document.getElementById('formerMaca');
 
  		margin+=5;
@@ -51,7 +50,7 @@ function moving(e){
 
  		cruiseLeft += 15;
  		smallCruiseLeft += .6;
- 		
+
  		if(cruiseLeft >= 590){
  			txt[0].style.display = 'block';
  		}
@@ -90,7 +89,7 @@ function moving(e){
 
  		if(cruiseLeft >= 2675){
  			music.classList.add('playMusic');
- 			
+
  			guitar.play();
  			two.classList.remove('active');
  			three.classList.add('active');
@@ -113,7 +112,7 @@ function moving(e){
  			four.classList.remove('active');
  			five.classList.add('active');
  		}
- 		
+
  	 	e.preventDefault();
  		cruise.style.left=cruiseLeft+"px";
  		smallCruise.style.left=smallCruiseLeft+"px";
@@ -147,7 +146,7 @@ function moving(e){
  	 	e.preventDefault();
  	 	cruise.classList.toggle('addTransformReturn');
  	}
- 
+
 }
 
 document.onkeydown = function(w){
@@ -224,15 +223,9 @@ five.onclick = function(event){
 	three.classList.remove('active');
 }
 
-		
+
 // 		macaAnimate.onload = function(){
 // 			// formerMaca.style.display = 'none';
 // 			alert("work");
-		
+
 // 	}
-	
-
-	
-	
-
-
